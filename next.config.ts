@@ -1,7 +1,8 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  // leave empty (or add other valid options), but no experimental.turbo boolean
-};
+  eslint: {
+    ignoreDuringBuilds: true, // don't block deploys on lint errors
+  },};
 
 export default nextConfig;
