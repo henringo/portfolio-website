@@ -1,10 +1,7 @@
-import { NextConfig } from 'next';
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-
-  experimental: {
-    turbo: false,   
-  },
+  // leave empty (or add other valid options), but no experimental.turbo boolean
 };
 
 export default nextConfig;
