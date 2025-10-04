@@ -7,7 +7,7 @@ export default function About() {
   const experiences = [
     {
       year: "2023 - Present",
-      title: "Senior Full-Stack Developer",
+      title: "Graduate Software Engineer",
       company: "Tech Innovations Inc.",
       description: "Leading development of enterprise web applications using React, Node.js, and cloud technologies.",
       skills: ["React", "Node.js", "AWS", "TypeScript"]
@@ -112,7 +112,7 @@ export default function About() {
           className="mb-20"
         >
           <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-200 mb-12 text-center">
-            Professional Experience
+             Education and Experience
           </h2>
           
           <div className="relative">
