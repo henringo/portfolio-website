@@ -35,25 +35,25 @@ export default function Contact() {
   const socialLinks = [
     {
       name: "GitHub",
-      url: "https://github.com",
+      url: "https://github.com/henringo",
       icon: "🐙",
       color: "hover:bg-gray-900 hover:text-white"
     },
     {
       name: "LinkedIn",
-      url: "https://linkedin.com",
+      url: "https://www.linkedin.com/in/vi-viet-hoang-ngo-209135207/",
       icon: "💼",
       color: "hover:bg-blue-600 hover:text-white"
     },
     {
-      name: "Twitter",
-      url: "https://twitter.com",
-      icon: "🐦",
+      name: "Facebook",
+      url: "https://www.facebook.com/hellohenri10",
+      icon: "🌐",
       color: "hover:bg-blue-400 hover:text-white"
     },
     {
       name: "Email",
-      url: "mailto:henry@example.com",
+      url: "mailto:henryngo.work@gmail.com",
       icon: "✉️",
       color: "hover:bg-red-500 hover:text-white"
     }
@@ -63,7 +63,7 @@ export default function Contact() {
     {
       icon: "📍",
       title: "Location",
-      detail: "San Francisco, CA",
+      detail: "Sydney, Australia",
       description: "Available for remote work worldwide"
     },
     {
