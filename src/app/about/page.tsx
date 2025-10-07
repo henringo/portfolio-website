@@ -80,8 +80,8 @@ export default function About() {
                 or collaborating with fellow developers, I bring my commitment to design excellence 
                 and technical rigor to every project I touch.
               </p>
-              <p>
-              Outside of coding, I have a deep interest in finance and investing. I actively invest in the VN-Index and enjoy exploring how technology intersects with markets, data, and decision-making. When I’m not working on projects or learning new tools, I’m often researching investment trends, contributing to open-source projects, or sharing insights with the developer community.            </div>
+              <p> Outside of coding, I have a deep interest in finance and investing. I actively invest in the VN-Index and enjoy exploring how technology intersects with markets, data, and decision-making. When I’m not working on projects or learning new tools, I’m often researching investment trends, contributing to open-source projects, or sharing insights with the developer community.   </p>
+            </div>
           </div>
           
           <div className="relative">
