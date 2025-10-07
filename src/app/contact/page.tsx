@@ -279,15 +279,15 @@ export default function Contact() {
             {[
               {
                 question: "What types of projects do you work on?",
-                answer: "I specialize in web applications, mobile apps, and AI solutions. From e-commerce platforms to custom business tools, I love tackling diverse technical challenges."
+                answer: "I’ve worked on a range of academic and personal projects - from full-stack web apps to AI models and data engineering pipelines. I love exploring how technology can solve real-world problems and improve everyday experiences."
               },
               {
-                question: "How long does a typical project take?",
-                answer: "Project timelines vary based on complexity. Simple websites might take 2-4 weeks, while complex applications can take 2-6 months. I'll provide detailed estimates during our initial consultation."
+                question: "What technologies do you use?",
+                answer: "I mainly work with JavaScript, TypeScript, React, Node.js, Python, and SQL. Recently, I’ve been exploring cloud platforms like AWS and experimenting with AI frameworks such as TensorFlow and PyTorch."
               },
               {
-                question: "Do you work with international clients?",
-                answer: "Absolutely! I work with clients worldwide and am experienced in remote collaboration. Time zone differences are never a barrier to great communication and results."
+                question: "How do you approach new challenges?",
+                answer: "I enjoy breaking complex problems into smaller, more manageable pieces. I research, experiment, and iterate until I find an elegant solution. I also enjoy learning from others — whether that’s through documentation, forums, or open-source projects."
               },
               {
                 question: "What's your development process?",
