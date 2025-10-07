@@ -72,9 +72,7 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed">
               <p>
-                Hello! I'm Henry, a full-stack developer with a passion for creating beautiful, 
-                functional, and user-centered digital experiences. My journey in web development 
-                began 5 years ago when I built my first website, and I've been hooked ever since.
+              Hello! I’m Henry, a recent graduate from the University of Sydney with a Bachelor of Advanced Computing (Honours), specialising in Software Development, AI, and Data Engineering. I’m a full-stack developer passionate about creating seamless, impactful, and user-centered digital experiences.
               </p>
               <p>
                 I believe that great software is built through collaboration, creativity, and 
@@ -83,10 +81,7 @@ export default function About() {
                 and technical rigor to every project I touch.
               </p>
               <p>
-                When I'm not coding, you can find me exploring new technologies, contributing to 
-                open-source projects, or sharing knowledge with the developer community.
-              </p>
-            </div>
+              Outside of coding, I have a deep interest in finance and investing. I actively invest in the VN-Index and enjoy exploring how technology intersects with markets, data, and decision-making. When I’m not working on projects or learning new tools, I’m often researching investment trends, contributing to open-source projects, or sharing insights with the developer community.            </div>
           </div>
           
           <div className="relative">
