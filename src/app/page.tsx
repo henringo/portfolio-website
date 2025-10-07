@@ -104,16 +104,16 @@ export default function Home() {
             className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center"
           >
             <div className="p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-purple-50 dark:from-slate-800 dark:to-slate-700 shadow-lg">
-              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">5+</div>
+              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">2+</div>
               <div className="text-gray-600 dark:text-gray-300">Years Experience</div>
             </div>
             <div className="p-6 rounded-2xl bg-gradient-to-br from-purple-50 to-pink-50 dark:from-slate-800 dark:to-slate-700 shadow-lg">
-              <div className="text-4xl font-bold text-purple-600 dark:text-purple-400 mb-2">50+</div>
+              <div className="text-4xl font-bold text-purple-600 dark:text-purple-400 mb-2">15+</div>
               <div className="text-gray-600 dark:text-gray-300">Projects Completed</div>
             </div>
             <div className="p-6 rounded-2xl bg-gradient-to-br from-pink-50 to-blue-50 dark:from-slate-800 dark:to-slate-700 shadow-lg">
               <div className="text-4xl font-bold text-pink-600 dark:text-pink-400 mb-2">100%</div>
-              <div className="text-gray-600 dark:text-gray-300">Client Satisfaction</div>
+              <div className="text-gray-600 dark:text-gray-300">Passion and Dedication</div>
             </div>
           </motion.div>
         </div>
@@ -161,6 +161,12 @@ export default function Home() {
                 title: "Full-Stack Solutions",
                 description: "End-to-end web applications and cloud deployment",
                 icon: "🚀",
+                color: "from-green-500 to-emerald-500"
+              },
+              {
+                title: "AI Applications",
+                description: "AI applications and machine learning",
+                icon: "🤖",
                 color: "from-green-500 to-emerald-500"
               }
             ].map((skill, index) => (
