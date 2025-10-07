@@ -35,13 +35,13 @@ export default function Skills() {
 
   const skills = {
     frontend: [
-      { name: "React", level: 95, icon: "⚛️" },
-      { name: "Next.js", level: 90, icon: "⚡" },
-      { name: "TypeScript", level: 88, icon: "📘" },
+      { name: "React", level: 85, icon: "⚛️" },
+      { name: "Next.js", level: 80, icon: "⚡" },
+      { name: "TypeScript", level: 75, icon: "📘" },
       { name: "JavaScript", level: 92, icon: "🟨" },
       { name: "HTML5", level: 95, icon: "🌐" },
       { name: "CSS3/SCSS", level: 90, icon: "🎨" },
-      { name: "Tailwind CSS", level: 85, icon: "🎯" },
+      { name: "Tailwind CSS", level: 80, icon: "🎯" },
       { name: "Framer Motion", level: 80, icon: "🎭" }
     ],
     backend: [
@@ -186,7 +186,7 @@ export default function Skills() {
               "Agile/Scrum", "CI/CD", "Testing", "Performance Optimization",
               "Responsive Design", "Accessibility", "SEO", "Security Best Practices",
               "API Design", "Microservices", "Serverless", "Mobile Development",
-              "UI/UX Design", "Data Visualization", "Machine Learning", "Blockchain"
+              "UI/UX Design", "Data Visualization", "Machine Learning"
             ].map((skill, index) => (
               <motion.div
                 key={skill}
