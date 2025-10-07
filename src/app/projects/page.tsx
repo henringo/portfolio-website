@@ -82,7 +82,21 @@ export default function Projects() {
       liveUrl: "#",
       githubUrl: "#",
       featured: false
-    }
+    },
+    {
+      id: 7,
+      title: "Handwritten Digit/Word Recognition",
+      description: "A handwritten digit/word recognition system using machine learning and computer vision. Features CNN architecture trained on EMNIST dataset with 95%+ accuracy.",
+      image: "🔍",
+      category: "ai",
+      technologies: ["Python", "TensorFlow", "Keras", "OpenCV","CNN"],
+      liveUrl: "#",
+      githubUrl: "https://github.com/henringo/CNN-EMNIST-handwriting-recognition",
+      featured: false,
+      videoUrl: "https://www.youtube.com/watch?v=your-video-id", // Replace with your actual video URL
+      detailedDescription: "This project implements a Convolutional Neural Network (CNN) for recognizing handwritten digits and words using the EMNIST dataset. The model achieves 95%+ accuracy through careful data preprocessing, augmentation, and architecture optimization. Key features include real-time prediction, batch processing capabilities, and support for both digits (0-9) and letters (A-Z). The system uses OpenCV for image preprocessing and TensorFlow/Keras for model training and inference. Perfect for applications in document digitization, automated form processing, and educational tools."
+    },
+    
   ];
 
   const filteredProjects = selectedCategory === "all" 
@@ -171,9 +185,15 @@ export default function Projects() {
                       ))}
                     </div>
                     <div className="flex gap-4">
-                      <button className="px-6 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300">
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-6 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300"
+                        onClick={(e) => e.stopPropagation()}
+                      >
                         View Project
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </motion.div>
@@ -226,12 +246,24 @@ export default function Projects() {
                       ))}
                     </div>
                     <div className="flex gap-3">
-                      <button className="px-4 py-2 bg-blue-600 text-white text-sm rounded-full hover:bg-blue-700 transition-colors duration-300">
-                        Live Demo
+                      <button
+                        className="px-4 py-2 bg-blue-600 text-white text-sm rounded-full hover:bg-blue-700 transition-colors duration-300"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setSelectedProject(project);
+                        }}
+                      >
+                        {project.videoUrl ? "View Demo" : "View Details"}
                       </button>
-                      <button className="px-4 py-2 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 text-sm rounded-full hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors duration-300">
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-2 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 text-sm rounded-full hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors duration-300"
+                        onClick={(e) => e.stopPropagation()}
+                      >
                         Code
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </motion.div>
@@ -299,6 +331,36 @@ export default function Projects() {
               <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-lg">
                 {selectedProject.description}
               </p>
+
+              {/* Video Demo Section */}
+              {selectedProject.videoUrl && (
+                <div className="mb-6">
+                  <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-3">
+                    Video Demo
+                  </h3>
+                  <div className="relative w-full h-64 bg-gray-100 dark:bg-slate-700 rounded-lg overflow-hidden">
+                    <iframe
+                      src={selectedProject.videoUrl.replace('watch?v=', 'embed/')}
+                      title={`${selectedProject.title} Demo`}
+                      className="w-full h-full"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                </div>
+              )}
+
+              {/* Detailed Description */}
+              {selectedProject.detailedDescription && (
+                <div className="mb-6">
+                  <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-3">
+                    Project Details
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                    {selectedProject.detailedDescription}
+                  </p>
+                </div>
+              )}
               
               <div className="mb-6">
                 <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-3">
@@ -348,4 +410,6 @@ interface Project {
   liveUrl: string;
   githubUrl: string;
   featured: boolean;
+  videoUrl?: string;
+  detailedDescription?: string;
 } 

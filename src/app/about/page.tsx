@@ -2,29 +2,30 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function About() {
   const experiences = [
     {
-      year: "2023 - Present",
-      title: "Graduate Software Engineer",
-      company: "Tech Innovations Inc.",
-      description: "Leading development of enterprise web applications using React, Node.js, and cloud technologies.",
-      skills: ["React", "Node.js", "AWS", "TypeScript"]
+      year: "2020",
+      title: "Student",
+      company: "Taylors College.",
+      description: "Foundation Program for Univesity of Sydney",
+      skills: ["Accounting", "Information Technology - Python,C#","Economics","Financial Maths"]
     },
     {
-      year: "2021 - 2023",
-      title: "Full-Stack Developer",
-      company: "Digital Solutions Co.",
-      description: "Built scalable web applications and APIs, collaborating with cross-functional teams.",
-      skills: ["Next.js", "Python", "PostgreSQL", "Docker"]
+      year: "2021 - 2025",
+      title: "Dalyell Student - Bachelor of Advanced Computing (Honours)",
+      company: "University of Sydney.",
+      description: "Academic Honours - WAM:74",
+      skills: ["Next.js", "Python", "PostgreSQL", "Java","R","C#","C++","SQL","NoSQL","Docker","Kubernetes","Git","Jenkins","GitLab CI","Azure","AWS","Machine Learning","AI","Data Science"]
     },
     {
-      year: "2019 - 2021",
-      title: "Frontend Developer",
-      company: "Creative Web Studio",
-      description: "Created responsive user interfaces and interactive web experiences.",
-      skills: ["JavaScript", "CSS3", "HTML5", "React"]
+      year: "October 2023 - February 2024",
+      title: "Data Analytics Intern",
+      company: "Maxport Limited Vietnam",
+      description: "Improved data analysis and reporting efficiency by 30% using Power BI and Python.",
+      skills: ["Power BI", "Python", "SQL","Data Visualization","Data Cleaning and Preprocessing","Data Pipeline","Data Privacy","Data Reporting","Data Dashboards","Data Security"]
     }
   ];
 
@@ -89,12 +90,15 @@ export default function About() {
           </div>
           
           <div className="relative">
-            <div className="w-full h-96 bg-gradient-to-br from-blue-100 to-purple-100 dark:from-slate-700 dark:to-slate-600 rounded-2xl flex items-center justify-center">
-              <div className="text-center">
-                <div className="text-8xl mb-4">👨‍💻</div>
-                <p className="text-gray-600 dark:text-gray-300 font-medium">
-                  Always learning, always building
-                </p>
+            <div className="w-full h-96 bg-gradient-to-br from-blue-100 to-purple-100 dark:from-slate-700 dark:to-slate-600 rounded-2xl flex items-center justify-center overflow-hidden">
+              <div className="relative w-80 h-80 rounded-full overflow-hidden shadow-2xl">
+                <Image
+                  src="/prof_pic.jpeg"
+                  alt="Henry Ngo - Profile Picture"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
             </div>
             {/* Floating elements */}
@@ -166,45 +170,7 @@ export default function About() {
           </div>
         </motion.div>
 
-        {/* Education */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="mb-20"
-        >
-          <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-200 mb-12 text-center">
-            Education
-          </h2>
-          
-          <div className="max-w-4xl mx-auto">
-            {education.map((edu, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
-                viewport={{ once: true }}
-                className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-slate-800 dark:to-slate-700 rounded-2xl p-8 text-center shadow-lg"
-              >
-                <div className="text-4xl mb-4">🎓</div>
-                <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-2">
-                  {edu.degree}
-                </h3>
-                <p className="text-lg text-purple-600 dark:text-purple-400 font-medium mb-3">
-                  {edu.school}
-                </p>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  {edu.description}
-                </p>
-                <span className="inline-block text-sm text-blue-600 dark:text-blue-400 font-medium bg-blue-100 dark:bg-blue-900/30 px-4 py-2 rounded-full">
-                  {edu.year}
-                </span>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
+  
 
         {/* Call to Action */}
         <motion.div
