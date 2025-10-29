@@ -102,7 +102,7 @@ The project demonstrates full-stack development skills, API design, authenticati
       title: "Honours Thesis - Detection and Identification of Context Switch events through privacy-preserving historical behavioural PC Users data",
       description: "Developed and evaluated machine learning pipelines for detecting user context switches using privacy-assured behavioural datasets (BEHACOM). Designed and implemented multiple modelling approaches — including clustering-based (K-Means) and sequential models (LSTM, Hidden Markov Models) — to identify application-level transitions from one-minute aggregated user interaction data. Conducted feature engineering across 12,000+ behavioural metrics (keyboard, mouse, system usage) and performed cross-user evaluations using gradient boosting, random forest, and ensemble classifiers. Achieved strong precision and recall with sequence-based methods, contributing insights into adaptive systems that anticipate user workflow shifts.",
       image: "🌤️",
-      category: "web",
+      category: "research",
       technologies: ["Python", "K-Means", "LSTM", "Hidden Markov Models", "Gradient Boosting", "Random Forest", "Ensemble Classifiers"],
       liveUrl: "#",
       githubUrl: "https://colab.research.google.com/drive/1O2vd7TYSUjYZOfCDnE623tYi4mavnFRb?usp=sharing",
@@ -123,13 +123,24 @@ The project demonstrates full-stack development skills, API design, authenticati
       featured: false,
       detailedDescription: "This project implements a Convolutional Neural Network (CNN) for recognizing handwritten digits and words using the EMNIST dataset. The model achieves 95%+ accuracy through careful data preprocessing, augmentation, and architecture optimization. Key features include real-time prediction, batch processing capabilities, and support for both digits (0-9) and letters (A-Z). The system uses OpenCV for image preprocessing and TensorFlow/Keras for model training and inference. Perfect for applications in document digitization, automated form processing, and educational tools."
     },
-    
+      {
+      id: 7,
+      title: "OldPhoneDeals Marketplace",
+      description: "A modern full‑stack marketplace to buy and sell pre‑owned smartphones, featuring a slick React UI, secure JWT authentication, and real‑time listing management.",
+      image: "📱",
+      category: "web",
+      technologies: ["React", "TypeScript", "Tailwind CSS", "JWT", "MongoDB", "Express", "Nodemailer"],
+      liveUrl: "#",
+      githubUrl: "https://github.com/henringo/2ND-HAND-Mobile-Phone-Store-Webpage",
+      featured: false,
+      detailedDescription: "OldPhoneDeals is a full‑stack web app for trading used smartphones. The React frontend (with MUI) delivers a clean, responsive experience for browsing, searching, and reviewing listings. The Node/Express API with MongoDB powers secure JWT authentication, email verification, and password resets, while Multer handles safe image uploads for seller listings. Authenticated users can create and manage their own listings, carts, and wishlists; admins moderate users and inventory with role‑based access and inactivity safeguards. Axios interceptors streamline client‑server communication and gracefully handle session and error states. Built for clarity, maintainability, and a smooth developer experience."
+    },
   ];
 
   const categories = [
     { id: "all", name: "All Projects", count: projects.length },
     { id: "web", name: "Web Apps", count: projects.filter(p => p.category === "web").length },
-    { id: "mobile", name: "Mobile Apps", count: projects.filter(p => p.category === "mobile").length },
+    { id: "research", name: "Research", count: projects.filter(p => p.category === "research").length },
     { id: "ai", name: "AI/ML", count: projects.filter(p => p.category === "ai").length },
     { id: "games", name: "Games", count: projects.filter(p => p.category === "games").length }
   ];
