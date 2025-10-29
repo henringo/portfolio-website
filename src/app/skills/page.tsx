@@ -35,14 +35,13 @@ export default function Skills() {
 
   const skills = {
     frontend: [
-      { name: "React", level: 85, icon: "⚛️" },
-      { name: "Next.js", level: 80, icon: "⚡" },
-      { name: "TypeScript", level: 75, icon: "📘" },
-      { name: "JavaScript", level: 92, icon: "🟨" },
-      { name: "HTML5", level: 95, icon: "🌐" },
-      { name: "CSS3/SCSS", level: 90, icon: "🎨" },
+      { name: "React", level: 70, icon: "⚛️" },
+      { name: "Next.js", level: 70, icon: "⚡" },
+      { name: "TypeScript", level: 70, icon: "📘" },
+      { name: "JavaScript", level: 76, icon: "🟨" },
+      { name: "HTML5", level: 80, icon: "🌐" },
+      { name: "CSS3/SCSS", level: 80, icon: "🎨" },
       { name: "Tailwind CSS", level: 80, icon: "🎯" },
-      { name: "Framer Motion", level: 80, icon: "🎭" }
     ],
     backend: [
       { name: "Node.js", level: 88, icon: "🟢" },
@@ -50,23 +49,28 @@ export default function Skills() {
       { name: "Express.js", level: 90, icon: "🚀" },
       { name: "FastAPI", level: 75, icon: "⚡" },
       { name: "GraphQL", level: 80, icon: "🔷" },
-      { name: "REST APIs", level: 92, icon: "🔌" }
+      { name: "REST APIs", level: 92, icon: "🔌" },
+      { name: "Spring Boot", level: 70, icon: "🔥" },
+      { name: "Java", level: 70, icon: "🔥" },
+      { name: "JUnit testing", level: 70, icon: "🔥" },
+      { name: "Gradle", level: 70, icon: "🔥" },
     ],
     database: [
       { name: "MongoDB", level: 85, icon: "🍃" },
       { name: "PostgreSQL", level: 80, icon: "🐘" },
-      { name: "Redis", level: 75, icon: "🔴" },
+      { name: "Redis", level: 60, icon: "🔴" },
       { name: "AWS", level: 70, icon: "☁️" },
       { name: "Firebase", level: 85, icon: "🔥" },
-      { name: "Docker", level: 75, icon: "🐳" }
+      { name: "Docker", level: 75, icon: "🐳" },
+      { name: "Jenkins", level: 70, icon: "🔥" },
     ],
     tools: [
       { name: "Git", level: 90, icon: "📚" },
-      { name: "GitHub", level: 88, icon: "🐙" },
-      { name: "VS Code", level: 95, icon: "💻" },
-      { name: "Postman", level: 85, icon: "📮" },
       { name: "Figma", level: 70, icon: "🎨" },
-      { name: "Jira", level: 80, icon: "📋" }
+      { name: "Jira", level: 80, icon: "📋" },
+      { name: "Confluence", level: 70, icon: "📋" },
+      { name: "Slack", level: 70, icon: "📋" },
+      { name: "Microsoft Excel", level: 70, icon: "📋" }
     ]
   };
 
@@ -219,22 +223,16 @@ export default function Skills() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                skill: "Rust",
-                description: "Systems programming language for performance-critical applications",
+                skill: "Quantitative Finance",
+                description: "Quantitative Finance",
                 progress: 30,
                 icon: "🦀"
               },
               {
-                skill: "Web3",
-                description: "Blockchain development and decentralized applications",
+                skill: "AWS Certfication Associate",
+                description: "AWS Certfication Associate",
                 progress: 45,
-                icon: "⛓️"
-              },
-              {
-                skill: "Machine Learning",
-                description: "AI algorithms and data science applications",
-                progress: 60,
-                icon: "🧠"
+                icon: "🔥"
               }
             ].map((item, index) => (
               <motion.div
