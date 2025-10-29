@@ -229,6 +229,12 @@ export default function Skills() {
                 icon: "🦀"
               },
               {
+                skill: "Mobile App",
+                description: "Mobile application development",
+                progress: 20,
+                icon: "📱"
+              },
+              {
                 skill: "AWS Certfication Associate",
                 description: "AWS Certfication Associate",
                 progress: 45,
