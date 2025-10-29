@@ -8,61 +8,85 @@ export default function Projects() {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-  const categories = [
-    { id: "all", name: "All Projects", count: 12 },
-    { id: "web", name: "Web Apps", count: 6 },
-    { id: "mobile", name: "Mobile Apps", count: 3 },
-    { id: "ai", name: "AI/ML", count: 2 },
-    { id: "other", name: "Other", count: 1 }
-  ];
-
   const projects: Project[] = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with React, Node.js, and Stripe integration. Features include user authentication, product management, shopping cart, and payment processing.",
-      image: "🛒",
-      category: "web",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe", "Tailwind CSS"],
+      title: "Space Invaders Game",
+      description: "Utilized Gradle for building, executing, and testing programs, based on OOP principles and adhered to SOLID and GRASP principles to ensure robust and maintainable code architecture. Applied design patterns, including Builder, Factory, State, Strategy, Façade, Observer, to enhance coding practices and improve software architecture.",
+      image: "🚀",
+      category: "games",
+      technologies: [ "Gradle", "Java", "JUnit testing"],
       liveUrl: "#",
-      githubUrl: "#",
-      featured: true
+      githubUrl: "https://github.com/henringo/Space-Invader-Game",
+      featured: false,
+      detailedDescription: "This Space Invaders game demonstrates advanced software engineering principles and design patterns. The project utilizes Gradle as the build automation tool for managing dependencies, compiling code, running tests, and packaging the application. The architecture follows Object-Oriented Programming (OOP) principles with proper encapsulation, inheritance, and polymorphism. The codebase adheres to SOLID principles (Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion) and GRASP principles (General Responsibility Assignment Software Patterns) to ensure maintainable and extensible code. Multiple design patterns are implemented including Builder for complex object creation, Factory for object instantiation, State for managing game states, Strategy for different enemy behaviors, Façade for simplifying complex subsystems, and Observer for event handling. The game features smooth gameplay mechanics, collision detection, scoring system, and progressive difficulty levels, all built with clean, well-structured code that serves as an excellent example of professional software development practices."
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
+      title: "CUSP AI",
+      description: `CUSP AI is a comprehensive academic planning assistant for University of Sydney students. The platform integrates transcript parsing, WAM forecasting, schedule management, and AI-powered features including unit recommendations and automated assignment marking with rubric-based feedback.
+
+Built as a group project with a modern full-stack architecture (Next.js frontend, Spring Boot backend, PostgreSQL database), the application addresses the challenge of navigating complex degree requirements and scattered academic information by consolidating planning tools into a unified experience.
+
+My contributions focused on backend API development, authentication systems, Units of Study (UoS) management, resume functionality, and the AI marking pipeline that processes PDF/DOCX submissions using GPT-4 for intelligent feedback generation.`,
       image: "📋",
       category: "web",
-      technologies: ["Next.js", "TypeScript", "Firebase", "Framer Motion"],
+      technologies: ["Next.js", "TypeScript", "Firebase", "Framer Motion", "Spring Boot", "Java", "PostgreSQL", "OpenAI", "Google Calendar API"],
       liveUrl: "#",
-      githubUrl: "#",
-      featured: true
+      githubUrl: "https://github.com/henringo/USYD-AI-for-SydneyCourse-Unit-of-Study-Portal",
+      featured: false,
+      detailedDescription: `CUSP AI – USYD Planning & Study Assistant
+
+A full-stack web application inspired by the University of Sydney's official CUSP platform, designed to help students navigate degree planning, academic progress tracking, and study management through intelligent automation and AI assistance.
+
+Problem Statement:
+Students struggle to translate USYD's complex rules—prerequisites, credit point requirements, progression pathways—into actionable study plans. Academic information is scattered across official portals, unit handbooks, and personal documents like transcripts, making it difficult to maintain a clear view of progress and plan future semesters effectively.
+
+Solution:
+CUSP AI consolidates these needs into a single, intuitive platform that automates transcript parsing, provides WAM forecasting with target setting, manages schedules and assignments, and offers AI-powered unit recommendations based on academic history and preferences.
+
+Key Features:
+• Transcript Processing: Upload PDF transcripts with automatic parsing to build structured academic records
+• WAM Forecasting: Calculate current WAM, set target goals, and visualize trends with interactive charts
+• Unit Recommendations: AI-powered suggestions based on transcript analysis and student preferences
+• Smart Scheduling: Calendar integration with Google Calendar for holidays, plus AI-generated study schedules from assignment due dates
+• Assignment Marking Assistant: Automated rubric extraction and GPT-4-powered feedback on submissions (PDF, DOCX, images with OCR)
+• Study Bot: Socratic tutoring chatbot for course guidance and academic support
+• Course Reviews: Community-driven unit reviews with compatibility scoring
+
+Technical Stack:
+• Frontend: Next.js (App Router), React, TypeScript, Tailwind CSS
+• Backend: Spring Boot (Java), RESTful APIs, JWT authentication
+• Database: PostgreSQL (Docker)
+• AI Services: OpenAI GPT-3.5/GPT-4 for recommendations, marking, and chat
+• External Integrations: Google Calendar API for holiday overlays
+
+My Contributions (Group Project):
+As part of the development team, I was responsible for:
+• Backend API architecture and REST endpoint development
+• Authentication system (JWT-based login/signup flow)
+• Units of Study (UoS) management features (CRUD operations)
+• Resume builder functionality
+• Marking system implementation including file ingestion (PDF/DOCX/OCR), rubric extraction via GPT-3.5, and chunk-based GPT-4 marking pipeline with annotation generation
+
+The project demonstrates full-stack development skills, API design, authentication best practices, integration with AI services, and collaborative software development in an academic context.
+`
     },
     {
       id: 3,
-      title: "AI Chat Assistant",
+      title: "Capstone Project - Merry Lightshowpi Project ",
       description: "An intelligent chatbot powered by machine learning that provides customer support and answers queries in real-time.",
       image: "🤖",
       category: "ai",
-      technologies: ["Python", "TensorFlow", "React", "FastAPI", "PostgreSQL"],
+      technologies: ["Python", "Raspberry Pi", "Arduino", "PostgreSQL", "Unity", "C#"],
       liveUrl: "#",
-      githubUrl: "#",
-      featured: false
+      githubUrl: "https://www.linkedin.com/pulse/capstone-2023-merry-lightshow-christmas-ug-cian-byrne-bic0c/?trackingId=p1VPR%2BucRkaIT%2BiiW3tENQ%3D%3D",
+      referenceUrl: "/5. Henry_Ngo_Capstone_Reference.pdf",
+      featured: false,
+      detailedDescription: "The Merry Lightshowpi Project is a capstone project that demonstrates the use of Raspberry Pi, Arduino, and Unity to create a lightshowpi. The project is a simulation of a lightshowpi that is used to control the lights of a Christmas tree. The project is built using Python, Raspberry Pi, Arduino, and Unity. The project is a simulation of a lightshowpi that is used to control the lights of a Christmas tree. The project is built using Python, Raspberry Pi, Arduino, and Unity."
     },
     {
       id: 4,
-      title: "Fitness Tracking Mobile App",
-      description: "A cross-platform mobile application for tracking workouts, nutrition, and health metrics with beautiful data visualizations.",
-      image: "💪",
-      category: "mobile",
-      technologies: ["React Native", "Expo", "GraphQL", "Chart.js"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
-    },
-    {
-      id: 5,
       title: "Portfolio Website",
       description: "A modern, responsive portfolio website built with Next.js and Tailwind CSS, featuring smooth animations and interactive elements.",
       image: "🎨",
@@ -70,21 +94,25 @@ export default function Projects() {
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
       liveUrl: "#",
       githubUrl: "#",
-      featured: false
+      featured: false,
+      detailedDescription: "A modern, fully responsive portfolio website showcasing professional work and skills through an elegant, interactive design. Built with Next.js and TypeScript for optimal performance, SEO, and type safety, the website features server-side rendering and static generation for fast loading times. Tailwind CSS provides utility-first styling with a custom design system that ensures consistency and maintainability across all components. Framer Motion integration delivers smooth, engaging animations and micro-interactions that enhance user experience and create a memorable browsing experience. The website includes multiple sections for project showcases, skills demonstration, about information, and contact forms. Key features include responsive design for all device sizes, dark/light theme toggle, smooth page transitions, interactive project galleries, contact form with validation, and optimized performance with lazy loading and image optimization. The clean, professional design effectively communicates technical expertise while maintaining excellent usability and accessibility standards."
+    },
+    {
+      id: 5,
+      title: "Honours Thesis - Detection and Identification of Context Switch events through privacy-preserving historical behavioural PC Users data",
+      description: "Developed and evaluated machine learning pipelines for detecting user context switches using privacy-assured behavioural datasets (BEHACOM). Designed and implemented multiple modelling approaches — including clustering-based (K-Means) and sequential models (LSTM, Hidden Markov Models) — to identify application-level transitions from one-minute aggregated user interaction data. Conducted feature engineering across 12,000+ behavioural metrics (keyboard, mouse, system usage) and performed cross-user evaluations using gradient boosting, random forest, and ensemble classifiers. Achieved strong precision and recall with sequence-based methods, contributing insights into adaptive systems that anticipate user workflow shifts.",
+      image: "🌤️",
+      category: "web",
+      technologies: ["Python", "K-Means", "LSTM", "Hidden Markov Models", "Gradient Boosting", "Random Forest", "Ensemble Classifiers"],
+      liveUrl: "#",
+      githubUrl: "https://colab.research.google.com/drive/1O2vd7TYSUjYZOfCDnE623tYi4mavnFRb?usp=sharing",
+      pdfUrl: "/7. Thesis_510064233_Henry_Ngo.pdf",
+      referenceUrl: "/6. Henry_Thesis_Reference.pdf",
+      featured: false,
+      detailedDescription: "A comprehensive weather dashboard application built with Vue.js that provides real-time weather data and detailed meteorological analytics. The application integrates with the OpenWeather API to fetch current weather conditions, hourly forecasts, and extended weather predictions for any location worldwide. Interactive maps powered by Leaflet.js allow users to explore weather patterns across different regions with zoom and pan functionality. Chart.js integration provides beautiful, responsive data visualizations for temperature trends, precipitation patterns, wind speed analysis, and humidity levels over time. Key features include location-based weather detection using geolocation services, customizable dashboard widgets, weather alerts and notifications, historical weather data analysis, multi-location tracking, and detailed weather statistics. The responsive design ensures optimal viewing experience across desktop and mobile devices, while the intuitive interface makes complex weather data accessible and easy to understand for users of all technical levels."
     },
     {
       id: 6,
-      title: "Weather Dashboard",
-      description: "A real-time weather application with location-based forecasts, interactive maps, and detailed weather analytics.",
-      image: "🌤️",
-      category: "web",
-      technologies: ["Vue.js", "OpenWeather API", "Chart.js", "Leaflet"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
-    },
-    {
-      id: 7,
       title: "Handwritten Digit/Word Recognition",
       description: "A handwritten digit/word recognition system using machine learning and computer vision. Features CNN architecture trained on EMNIST dataset with 95%+ accuracy.",
       image: "🔍",
@@ -93,10 +121,17 @@ export default function Projects() {
       liveUrl: "#",
       githubUrl: "https://github.com/henringo/CNN-EMNIST-handwriting-recognition",
       featured: false,
-      videoUrl: "https://www.youtube.com/watch?v=your-video-id", // Replace with your actual video URL
       detailedDescription: "This project implements a Convolutional Neural Network (CNN) for recognizing handwritten digits and words using the EMNIST dataset. The model achieves 95%+ accuracy through careful data preprocessing, augmentation, and architecture optimization. Key features include real-time prediction, batch processing capabilities, and support for both digits (0-9) and letters (A-Z). The system uses OpenCV for image preprocessing and TensorFlow/Keras for model training and inference. Perfect for applications in document digitization, automated form processing, and educational tools."
     },
     
+  ];
+
+  const categories = [
+    { id: "all", name: "All Projects", count: projects.length },
+    { id: "web", name: "Web Apps", count: projects.filter(p => p.category === "web").length },
+    { id: "mobile", name: "Mobile Apps", count: projects.filter(p => p.category === "mobile").length },
+    { id: "ai", name: "AI/ML", count: projects.filter(p => p.category === "ai").length },
+    { id: "games", name: "Games", count: projects.filter(p => p.category === "games").length }
   ];
 
   const filteredProjects = selectedCategory === "all" 
@@ -145,68 +180,11 @@ export default function Projects() {
           ))}
         </motion.div>
 
-        {/* Featured Projects */}
-        {selectedCategory === "all" && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="mb-16"
-          >
-            <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-200 mb-8 text-center">
-              Featured Projects
-            </h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {projects.filter(p => p.featured).map((project, index) => (
-                <motion.div
-                  key={project.id}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 0.6 + index * 0.1 }}
-                  className="group cursor-pointer"
-                  onClick={() => setSelectedProject(project)}
-                >
-                  <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 dark:border-slate-700">
-                    <div className="text-6xl mb-6">{project.image}</div>
-                    <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-4">
-                      {project.title}
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                      {project.description}
-                    </p>
-                    <div className="flex flex-wrap gap-2 mb-6">
-                      {project.technologies.slice(0, 4).map((tech, techIndex) => (
-                        <span
-                          key={techIndex}
-                          className="px-3 py-1 bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 text-sm rounded-full"
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                    <div className="flex gap-4">
-                      <a
-                        href={project.liveUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-6 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300"
-                        onClick={(e) => e.stopPropagation()}
-                      >
-                        View Project
-                      </a>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        )}
-
         {/* All Projects Grid */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
         >
           <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-200 mb-8 text-center">
             {selectedCategory === "all" ? "All Projects" : `${categories.find(c => c.id === selectedCategory)?.name}`}
@@ -255,15 +233,7 @@ export default function Projects() {
                       >
                         {project.videoUrl ? "View Demo" : "View Details"}
                       </button>
-                      <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-4 py-2 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 text-sm rounded-full hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors duration-300"
-                        onClick={(e) => e.stopPropagation()}
-                      >
-                        Code
-                      </a>
+                      {/* Intentionally show only View Details on the card */}
                     </div>
                   </div>
                 </motion.div>
@@ -379,18 +349,46 @@ export default function Projects() {
               </div>
               
               <div className="flex gap-4">
-                <a
-                  href={selectedProject.liveUrl}
-                  className="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300"
-                >
-                  View Live Project
-                </a>
-                <a
-                  href={selectedProject.githubUrl}
-                  className="px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-full hover:bg-gray-50 dark:hover:bg-slate-700 transition-all duration-300"
-                >
-                  View Code
-                </a>
+                {selectedProject.notebookUrl && (
+                  <a
+                    href={selectedProject.notebookUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-full hover:bg-gray-50 dark:hover:bg-slate-700 transition-all duration-300"
+                  >
+                    View Notebook
+                  </a>
+                )}
+                {selectedProject.referenceUrl && (
+                  <a
+                    href={selectedProject.referenceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-full hover:bg-gray-50 dark:hover:bg-slate-700 transition-all duration-300"
+                  >
+                    View Reference
+                  </a>
+                )}
+                {selectedProject.pdfUrl && (
+                  <a
+                    href={selectedProject.pdfUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-full hover:bg-gray-50 dark:hover:bg-slate-700 transition-all duration-300"
+                  >
+                    View PDF
+                  </a>
+                )}
+                {selectedProject.githubUrl && selectedProject.githubUrl !== "#" && (
+                  <a
+                    href={selectedProject.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300"
+                  >
+                    View Code
+                  </a>
+                )}
               </div>
             </motion.div>
           </motion.div>
@@ -411,5 +409,8 @@ interface Project {
   githubUrl: string;
   featured: boolean;
   videoUrl?: string;
+  notebookUrl?: string;
+  pdfUrl?: string;
+  referenceUrl?: string;
   detailedDescription?: string;
 } 
